@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use App\Models\Post;
 use App\Http\Requests\PostRequest; // useする
 
@@ -12,6 +13,7 @@ class PostController extends Controller
     }
 
     public function show(Post $post)
+
     {
         return view('posts.show')->with(['post' => $post]);
     }
